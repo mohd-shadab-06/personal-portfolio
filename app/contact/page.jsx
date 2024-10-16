@@ -166,11 +166,11 @@ const Contact = () => {
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
               onSubmit={handleCreateDocument}
             >
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
-                If you've made it this far, please feel free to leave a message
-                or suggestion. Additionally, if you're interested in hiring me,
-                please fill out the form below.
+                If you&apos;ve made it this far, please feel free to leave a
+                message or suggestion. Additionally, if you&apos;re interested
+                in hiring me, please fill out the form below.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
