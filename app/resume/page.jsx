@@ -1,20 +1,13 @@
 "use client";
 
-import { Description } from "@radix-ui/react-dialog";
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const about = {
   title: "About me",
-  description: "lorem ipsum",
+  description:
+    "Dedicated software engineer with a passion for crafting innovative solutions. Proven experience in Php, Laravel, Javascript, ReactJs and NextJs. Committed to staying updated with industry trends and best practices. Eager to contribute my skills to a dynamic team and make a positive impact.",
   info: [
     {
       fieldName: "Name",
@@ -22,23 +15,23 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+91) 9xxxx-xxxx1",
+      fieldValue: "(+91) 90266-09991",
     },
     {
       fieldName: "Experience",
-      fieldValue: "1+ Years",
+      fieldValue: "2+ Years",
+    },
+    {
+      fieldName: "Email",
+      fieldValue: "ms.shadab06@gmail.com",
+    },
+    {
+      fieldName: "Languages",
+      fieldValue: "English & Hindi",
     },
     {
       fieldName: "Nationality",
       fieldValue: "Indian",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "ms.xxxxxxxx@gmail.com",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Hindi",
     },
   ],
 };
@@ -47,27 +40,17 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet in error, reprehenderit nihil quasi ipsum accusamus mollitia rem ipsam fuga sunt voluptate porro at! Est quos praesentium totam autem nemo.",
+    "With a proven track record of 2 years in the IT industry, I have honed my skills as a Senior Systems Engineer and Software Intern. My experience spans across technologies like SQL, Javascript, ReactJs etc. ",
   items: [
     {
       company: "Cognizant Technology Solutions",
-      position: "Full Stack Developer",
-      duration: "2021-203",
+      position: "Senior Systems Engineer",
+      duration: "2021-2023",
     },
     {
-      company: "Cognizant Technology Solutions",
-      position: "Full Stack Developer",
-      duration: "2021-203",
-    },
-    {
-      company: "Cognizant Technology Solutions",
-      position: "Full Stack Developer",
-      duration: "2021-203",
-    },
-    {
-      company: "Cognizant Technology Solutions",
-      position: "Full Stack Developer",
-      duration: "2021-203",
+      company: "Analyze Infotech Pvt. Ltd.",
+      position: "Software Intern",
+      duration: "Feb 2024 - May 2024",
     },
   ],
 };
@@ -76,17 +59,27 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet in error, reprehenderit nihil quasi ipsum accusamus mollitia rem ipsam fuga sunt voluptate porro at! Est quos praesentium totam autem nemo.",
+    "I hold a Master of Computer Applications (MCA) degree, which I earned in 2024. Prior to that, I completed my Bachelor of Computer Applications (BCA) degree in 2021. My academic background has equipped me with a strong foundation in computer science principles, programming languages, and software development methodologies.",
   items: [
     {
       institution: "Sacred Heart Institute of Management & Technology",
       degree: "Master of Computer Applications",
-      duration: "2022-2024",
+      duration: "2024",
     },
     {
       institution: "Sacred Heart Degree College",
       degree: "Bachelor of Computer Application",
-      duration: "2017-2021",
+      duration: "2021",
+    },
+    {
+      institution: "Sacred Heart Inter College",
+      degree: "Intermediate",
+      duration: "2017",
+    },
+    {
+      institution: "Sacred Heart Inter College",
+      degree: "High School",
+      duration: "2015",
     },
   ],
 };
@@ -94,7 +87,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet in error, reprehenderit nihil quasi ipsum accusamus mollitia rem ipsam fuga sunt voluptate porro at! Est quos praesentium totam autem nemo.",
+    "As a skilled PHP and JavaScript developer, I specialize in Next.js and Laravel. My expertise in algorithm design, data structures, and cloud platforms allows me to build efficient and scalable web applications. I'm a collaborative problem-solver focused on delivering high-quality projects.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -132,9 +125,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-import { IoMdGitMerge } from "react-icons/io";
 
 const Resume = () => {
   return (
